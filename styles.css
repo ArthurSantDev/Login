@@ -1,0 +1,89 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+}
+
+.box{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    border-radius: 17px;
+    user-select: none;
+}
+
+fieldset{
+    border: 3px solid dodgerblue;
+    border-radius: 15px;
+}
+
+legend{
+    border: 1px solid dodgerblue;    
+    background-color: dodgerblue;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+}
+
+.gender{
+    cursor: pointer;
+}
+
+.inputBox{
+    position: relative;
+}
+
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none; /*Tira a borda que fica ao clicar*/
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+.labelInput{
+    position: relative;
+    top: -22px;
+    left: 5px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.inputBox:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput{
+    top: -40px;
+    left: 0px;
+    color:  rgb(0, 195, 255);
+}
+
+#date{
+    text-align: center;
+    font-size: 15px;
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+}
+
+#submit{
+    color: rgb(173, 173, 173);
+    background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(8, 56, 119));
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    font-size: large;
+    cursor: pointer;
+}
+
+#submit:hover{
+    color: white;
+    background-image: linear-gradient(to right, rgb(54, 179, 252), rgb(24, 84, 161));
+}

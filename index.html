@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" type="svg" href="img/icon.svg">
+    <link rel="stylesheet" href="styles.css"/>    
+    <title>Login</title>
+</head>
+<body>
+    <div class="box">
+        <form action="">
+            <fieldset>
+            <legend><b>Customers</b></legend>
+            <br>
+            <div class="inputbox">
+            <input type="text" name="name" id="name" class="inputUser" required>
+            <label for="name" class="labelInput">Full name</label>
+            </div>
+            <br>
+            <div class="inputbox">
+            <input type="text" name="email" id="email" class="inputUser" required>
+            <label for="email" class="labelInput">E-mail</label>
+            </div>
+            <br>
+            <div class="inputbox">
+            <input type="tel" name="tel" id="tel" class="inputUser" required>
+            <label for="tel" class="labelInput">Telephone</label>
+            </div>
+                <p>Gender:</p>
+                <input type="radio" id="female" name="gender" volue="female" class="gender" required>
+                <label for="female">Female</label>
+                <br>
+                <input type="radio" id="male" name="gender" volue="male" class="gender" required>
+                <label for="male">Male</label>
+                <br>
+                <input type="radio" id="others" name="gender" volue="others" class="gender" required>
+                <label for="others">Others</label>
+            <br><br>
+            <label for="date"><b>Day of your birthday:</b></label>
+            <input type="date" id="date" name="date" volue="date" required>
+            <br><br>
+            <br>
+            <div class="inputbox">
+            <input type="text" id="city" name="city" class="inputUser" required>
+            <label for="city" class="labelInput">City</label>
+            </div>
+            <br>
+            <div class="inputbox">
+            <input type="text" id="state" name="state" class="inputUser" required>
+            <label for="state" class="labelInput">State</label>
+            </div>
+            <br>
+            <div class="inputbox">
+            <input type="text" id="address" name="address" class="inputUser" required>
+            <label for="address" class="labelInput">Address</label>
+            </div>
+            <br>
+                <input type="submit" name="submit" id="submit">
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
